@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --mark-color-red: #DA251C;
+  --mark-color-blue: #29166F;
+  --mark-color-white: #FFFFFF;
+  --template-color-red: #B71C1C;
+  --template-color-blue: #0D47A1;
+  --template-color-white: #EEEEEE;
+  --text-light-black: #525051;
+  --text-black: #272727;
+  --text-dark-white: #DDF6FE;
+  --text-white: #FFFFFF;
+  --button-disabled: #BBBBBB;
+
+  --font-family-title: 'Open Sans', sans-serif;
+  --font-family-text: 'Nunito Sans', sans-serif;
+
+  font-size: 60%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.return-button{
+  color: var(--text-light-black);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-family: var(--font-family-text);
+}
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-item label{
+  font-size: 2rem;
+  font-family: var(--font-family-text);
+  margin-bottom: 1rem;
+}
+
+.form-item .form-control{
+  font-size: 2rem;
+  font-family: var(--font-family-text);
+  padding: 0.5rem;
+  border: none;
+  height: 3rem;
+}
+
+.form-item .form-control.invalid{
+  border: 1px solid var(--template-color-red);
+}
+
+.action-button{
+  font-family: var(--font-family-text);
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  height: 4rem;
+}
+
+.primary-button{
+  color: var(--text-white);
+  background-color: var(--template-color-blue);
+}
+
+.secondary-button{
+  color: var(--text-white);
+  background-color: var(--template-color-red);
+}
+
+button:is(.primary-button, .secondary-button):disabled{
+  background-color: var(--button-disabled);
+}

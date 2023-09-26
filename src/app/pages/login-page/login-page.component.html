@@ -1,0 +1,23 @@
+<button class="return-button" [routerLink]="['/']">
+  Voltar
+</button>
+<div class="central-content">
+  <h2>Login</h2>
+  <form *ngIf="form" [formGroup]="form">
+    <div class="form-item">
+      <label for="login">Login:</label>
+      <input type="text" formControlName="login" id="login" minlength="6" maxlength="200" class="form-control"
+        [ngClass]="{'invalid': form.get('login')?.errors && form.get('login')?.touched}"
+      >
+    </div>
+    <div class="form-item">
+      <label for="password">Senha:</label>
+      <input type="password" formControlName="password" id="password" minlength="8" maxlength="20" class="form-control"
+        [ngClass]="{'invalid': form.get('password')?.errors && form.get('password')?.touched}"
+      >
+    </div>
+    <div class="form-item">
+      <button class="primary-button action-button" [disabled]="form.invalid">ENTRAR</button>
+    </div>
+  </form>
+</div>
