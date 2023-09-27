@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "name": "Anderson Farias",
+      "email": "af183195@alunos.unisanta.br",
+      "ra": "183195",
+      "password": "12332190"
+    },
+    {
+      "name": "Yuri Ferrão",
+      "email": "ys186200@alunos.unisanta.br",
+      "ra": "186200",
+      "password": "zxcvbnml"
+    }
+  ]
+}
