@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { DataService } from './data.service';
+import { CommunityDataService } from './community-data.service';
 
-describe('DataService', () => {
-  let service: DataService;
+describe('CommunityDataService', () => {
+  let service: CommunityDataService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(DataService);
+    service = TestBed.inject(CommunityDataService);
   });
 
   it('should be created', () => {

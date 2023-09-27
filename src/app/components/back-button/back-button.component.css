@@ -1,0 +1,9 @@
+.return-button{
+  color: var(--text-light-black);
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  font-family: var(--font-family-text);
+}

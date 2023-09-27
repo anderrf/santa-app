@@ -12,5 +12,26 @@
       "ra": "186200",
       "password": "zxcvbnml"
     }
-  ]
+  ],
+  "community": {
+    "alerts": [
+      {
+        "title": "Eleição",
+        "text": "Eleição dos membros do Diretório Acadêmico."
+      }
+    ],
+    "partnerships": [
+      {
+        "client": "Bar",
+        "offer": "10% de desconto mediante apresentação da carteira estudantil."
+      }
+    ],
+    "events": [
+      {
+        "name": "Coderz",
+        "location": "Consistório I - UNISANTA",
+        "description": "Reunião de programadores, discussão de empregabilidade."
+      }
+    ]
+  }
 }

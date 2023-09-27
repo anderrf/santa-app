@@ -8,6 +8,10 @@ import { NotAuthGuard } from './services/not-auth.guard';
 import { StudentTabComponent } from './components/student-tab/student-tab.component';
 import { ClassTabComponent } from './components/class-tab/class-tab.component';
 import { CommunityTabComponent } from './components/community-tab/community-tab.component';
+import { CommunityPageComponent } from './pages/community-page/community-page.component';
+import { CommunityAlertsComponent } from './components/community/community-alerts/community-alerts.component';
+import { CommunityPartnershipsComponent } from './components/community/community-partnerships/community-partnerships.component';
+import { CommunityEventsComponent } from './components/community/community-events/community-events.component';
 
 const routes: Routes = [
   {
@@ -41,6 +45,29 @@ const routes: Routes = [
       {
         'path': 'comunidade',
         component: CommunityTabComponent
+      }
+    ]
+  },
+  {
+    path: 'comunidade',
+    component: CommunityPageComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: '/comunidade/avisos',
+        pathMatch: 'full'
+      },
+      {
+        path: 'avisos',
+        component: CommunityAlertsComponent
+      },
+      {
+        path: 'parcerias',
+        component: CommunityPartnershipsComponent
+      },
+      {
+        path: 'eventos',
+        component: CommunityEventsComponent
       }
     ]
   }

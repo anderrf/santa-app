@@ -11,6 +11,7 @@
   --text-dark-white: #DDF6FE;
   --text-white: #FFFFFF;
   --button-disabled: #BBBBBB;
+  --info-block: #D6D8D9;
 
   --font-family-title: 'Open Sans', sans-serif;
   --font-family-text: 'Nunito Sans', sans-serif;
@@ -29,15 +30,6 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-.return-button{
-  color: var(--text-light-black);
-  background: none;
-  border: none;
-  font-size: 2rem;
-  padding: 0.5rem;
-  font-family: var(--font-family-text);
 }
 
 .form-item{
@@ -113,4 +105,37 @@ button:is(.primary-button, .secondary-button):disabled{
 
 .menu-tab-items-display button:nth-child(even){
   background-color: var(--template-color-red);
+}
+
+.blocks-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks-section h3{
+  font-family: var(--font-family-title);
+  font-weight: 300;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.blocks-area{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+.empty-list-warning{
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  background: none;
+}
+
+.empty-list-warning p{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--font-family-text);
+  color: var(--text-black);
+  text-align: center;
 }

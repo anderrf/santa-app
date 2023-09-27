@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { User } from '../models/user';
+import { User } from '../models/users/user';
 
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class UsersDataService {
 
   constructor() { }
 

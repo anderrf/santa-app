@@ -1,14 +1,14 @@
-import { DataService } from './data.service';
+import { UsersDataService } from './users-data.service';
 import { Injectable } from '@angular/core';
-import { User } from '../models/user';
-import { LoginRequest } from '../models/login-request';
+import { User } from '../models/users/user';
+import { LoginRequest } from '../models/users/login-request';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: UsersDataService) { }
 
   public async getAuthenticatedUser(): Promise<User>{
     const userString = localStorage.getItem('user') || '';
