@@ -1,14 +1,15 @@
 <app-navbar></app-navbar>
 <main>
-  <nav>
-    <a class="area-navbar-tab">
+  <nav class="main-areas-tab">
+    <a [routerLink]="['/menu/aluno']" routerLinkActive="active">
+      Aluno
+    </a>
+    <a [routerLink]="['/menu/turma']" routerLinkActive="active">
       Turma
     </a>
-    <a class="area-navbar-tab">
+    <a [routerLink]="['/menu/comunidade']" routerLinkActive="active">
       Comunidade
     </a>
-    <a class="area-navbar-tab">
-      Curso
-    </a>
   </nav>
+  <router-outlet></router-outlet>
 </main>

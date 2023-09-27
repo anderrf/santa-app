@@ -14,7 +14,7 @@ export class NotAuthGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       const userString = localStorage.getItem('user') || '';
       if(userString.length){
-        this.router.navigateByUrl('/main');
+        this.router.navigateByUrl('/menu');
         return false;
       }
       return true;

@@ -29,7 +29,7 @@ export class LoginPageComponent implements OnInit {
     const loginRequest = this.form.getRawValue();
     await this.authenticationService.logon(loginRequest)
       .then(() => {
-        this.router.navigateByUrl('/main')
+        this.router.navigateByUrl('/menu')
       })
       .catch((err) => {
         alert(err)

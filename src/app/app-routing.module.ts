@@ -5,6 +5,9 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { AuthGuard } from './services/auth.guard';
 import { NotAuthGuard } from './services/not-auth.guard';
+import { StudentTabComponent } from './components/student-tab/student-tab.component';
+import { ClassTabComponent } from './components/class-tab/class-tab.component';
+import { CommunityTabComponent } from './components/community-tab/community-tab.component';
 
 const routes: Routes = [
   {
@@ -18,9 +21,28 @@ const routes: Routes = [
     canActivate: [NotAuthGuard]
   },
   {
-    path: 'main',
+    path: 'menu',
     component: MainPageComponent,
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
+    children: [
+      {
+        'path': '',
+        pathMatch: 'full',
+        redirectTo: '/menu/aluno'
+      },
+      {
+        'path': 'aluno',
+        component: StudentTabComponent
+      },
+      {
+        'path': 'turma',
+        component: ClassTabComponent
+      },
+      {
+        'path': 'comunidade',
+        component: CommunityTabComponent
+      }
+    ]
   }
 ];
 

@@ -8,6 +8,9 @@ import { InitialPageComponent } from './pages/initial-page/initial-page.componen
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { StudentTabComponent } from './components/student-tab/student-tab.component';
+import { ClassTabComponent } from './components/class-tab/class-tab.component';
+import { CommunityTabComponent } from './components/community-tab/community-tab.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     InitialPageComponent,
     LoginPageComponent,
     MainPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    StudentTabComponent,
+    ClassTabComponent,
+    CommunityTabComponent
   ],
   imports: [
     BrowserModule,
