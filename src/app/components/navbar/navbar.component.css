@@ -1,0 +1,28 @@
+nav{
+  width: 100vw;
+  height: 3.6rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  background-color: var(--template-color-red);
+  color: var(--text-dark-white);
+  font-family: var(--font-family-text);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-left{
+  text-align: left;
+}
+
+.nav-right{
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-dark-white);
+}

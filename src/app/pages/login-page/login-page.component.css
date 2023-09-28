@@ -1,0 +1,17 @@
+.central-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: var(--template-color-white);
+  height: 100%;
+  width: 100%;
+}
+
+h2{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text-ligth-black);
+  font-size: 3.2rem;
+}
+

@@ -1,0 +1,16 @@
+<section class="blocks-section">
+  <app-back-button [routerLink]="['/turma/'+class?.id]"></app-back-button>
+  <h3>{{class?.name}} - Avisos</h3>
+  <div class="blocks-area" *ngIf="alerts?.length; else noAlerts">
+    <app-info-block *ngFor="let alert of alerts"
+      [title]="alert.subject"
+      [subtitle]="alert.sender + ' - ' + (alert.dateTime | date : 'dd/MM/yyyy hh:mm:ss')"
+      [text]="alert.content"
+    ></app-info-block>
+  </div>
+  <ng-template #noAlerts>
+    <div class="empty-list-warning">
+      <p>Sem avisos no momento!</p>
+    </div>
+  </ng-template>
+</section>

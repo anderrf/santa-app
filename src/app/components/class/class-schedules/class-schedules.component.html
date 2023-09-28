@@ -1,0 +1,12 @@
+<section class="blocks-section">
+  <app-back-button [routerLink]="['/turma/'+class?.id]"></app-back-button>
+  <h3>{{class?.name}} - Horários</h3>
+  <div class="blocks-area" *ngIf="schedules?.length; else noSchedules">
+    <app-week-schedules [schedules]="schedules"></app-week-schedules>
+  </div>
+  <ng-template #noSchedules>
+    <div class="empty-list-warning">
+      <p>Não há matérias disponíveis para visualização!</p>
+    </div>
+  </ng-template>
+</section>

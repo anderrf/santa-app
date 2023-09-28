@@ -1,0 +1,6 @@
+.week-day h4{
+  font-size: 2rem;
+  font-family: var(--font-family-text);
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}

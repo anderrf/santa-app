@@ -1,0 +1,15 @@
+<section class="blocks-section">
+  <h3>Eventos</h3>
+  <div class="blocks-area" *ngIf="events?.length; else noEvents">
+    <app-info-block *ngFor="let event of events"
+      [title]="event.name"
+      [subtitle]="event.location"
+      [text]="event.description"
+    ></app-info-block>
+  </div>
+  <ng-template #noEvents>
+    <div class="empty-list-warning">
+      <p>Sem eventos no momento!</p>
+    </div>
+  </ng-template>
+</section>

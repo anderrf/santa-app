@@ -1,0 +1,17 @@
+<section class="blocks-section">
+  <app-back-button [routerLink]="['/turma/'+class?.id]"></app-back-button>
+  <h3>{{class?.name}} - Chat dos Alunos</h3>
+  <div class="blocks-area" *ngIf="notes?.length; else noNotes">
+    <app-info-block *ngFor="let note of notes"
+      [title]="note.subject"
+      [subtitle]="note.sender + ' - ' + (note.dateTime | date : 'dd/MM/yyyy hh:mm:ss')"
+      [text]="note.content"
+      [isEmphasized]="note.senderId === userId"
+    ></app-info-block>
+  </div>
+  <ng-template #noNotes>
+    <div class="empty-list-warning">
+      <p>Esta conversa está vazia!</p>
+    </div>
+  </ng-template>
+</section>

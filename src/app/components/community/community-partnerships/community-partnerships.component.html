@@ -1,0 +1,15 @@
+<section class="blocks-section">
+  <h3>Parcerias</h3>
+  <div class="blocks-area" *ngIf="partnerships?.length; else noPartnerships">
+    <app-info-block *ngFor="let partnership of partnerships"
+      [title]="partnership.client"
+      [text]="partnership.offer"
+    ></app-info-block>
+  </div>
+  <ng-template #noPartnerships>
+    <div class="empty-list-warning">
+      <p>Sem parcerias no momento!</p>
+    </div>
+  </ng-template>
+</section>
+

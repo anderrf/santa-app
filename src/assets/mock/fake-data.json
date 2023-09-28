@@ -1,0 +1,123 @@
+{
+  "users": [
+    {
+      "id": "000001",
+      "name": "Anderson Farias",
+      "email": "af183195@alunos.unisanta.br",
+      "ra": "183195",
+      "password": "12332190"
+    },
+    {
+      "id": "000025",
+      "name": "Yuri Ferrão",
+      "email": "ys186200@alunos.unisanta.br",
+      "ra": "186200",
+      "password": "zxcvbnml"
+    },
+    {
+      "id": "675849",
+      "name": "Luiz Mauá",
+      "email": "luizmaua@unisanta.br",
+      "ra": "999999",
+      "password": "1qaz2wsx"
+    }
+  ],
+  "community": {
+    "alerts": [
+      {
+        "title": "Eleição",
+        "text": "Eleição dos membros do Diretório Acadêmico."
+      }
+    ],
+    "partnerships": [
+      {
+        "client": "Bar",
+        "offer": "10% de desconto mediante apresentação da carteira estudantil."
+      }
+    ],
+    "events": [
+      {
+        "name": "Coderz",
+        "location": "Consistório I - UNISANTA",
+        "description": "Reunião de programadores, discussão de empregabilidade."
+      }
+    ]
+  },
+  "class": {
+    "classes": [
+      {
+        "name": "Interface Homem Máquina",
+        "id": "class01",
+        "professorId": "675849"
+      }
+    ],
+    "alerts": [
+      {
+        "id": "01",
+        "classId": "class01",
+        "subject": "Exam 01",
+        "senderId": "675849",
+        "sender":"Luiz Mauá",
+        "content": "Exam will be held in 2023/09/28",
+        "dateTime": "2023-09-10T12:00:00"
+      }
+    ],
+    "privateNotes": [
+      {
+        "id": "03",
+        "classId": "class01",
+        "subject": "Exam 01",
+        "senderId": "000025",
+        "sender": "Yuri Ferrão",
+        "content": "What is the content of this first exam?",
+        "dateTime": "2023-09-20T10:00:00"
+      },
+      {
+        "id": "05",
+        "classId": "class01",
+        "subject": "Exam 01",
+        "senderId": "000001",
+        "sender": "Anderson Farias",
+        "content": "It'll be about the homeworks and tasks",
+        "dateTime": "2023-09-20T15:00:00"
+      }
+    ],
+    "publicNotes": [
+      {
+        "id": "27",
+        "subject": "Studying references",
+        "senderId": "675849",
+        "sender": "Luiz Mauá",
+        "content": "Be aware that the class presentations will not be available",
+        "dateTime": "2023-09-15T09:00:00"
+      }
+    ],
+    "classSchedules": [
+      {
+        "classId": "class01",
+        "className": "Interface Homem Máquina",
+        "dayOfTheWeek": 4,
+        "startHour": "19:00:00",
+        "endHour": "20:30:00",
+        "location": "Sala M215"
+      }
+    ],
+    "professorSchedules": [
+      {
+        "professorId": "675849",
+        "professorName": "Luiz Maua",
+        "professorEmail": "luizmaua@unisanta.br",
+        "schedules": [
+          {
+            "classId": "class01",
+            "className": "Interface Homem Máquina",
+            "dayOfTheWeek": 4,
+            "startHour": "19:00:00",
+            "endHour": "20:30:00",
+            "location": "Sala M215"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<section class="blocks-section">
+  <h3>Avisos</h3>
+  <div class="blocks-area" *ngIf="alerts?.length; else noAlerts">
+    <app-info-block *ngFor="let alert of alerts"
+      [title]="alert.title"
+      [text]="alert.text"
+    ></app-info-block>
+  </div>
+  <ng-template #noAlerts>
+    <div class="empty-list-warning">
+      <p>Sem avisos no momento!</p>
+    </div>
+  </ng-template>
+</section>

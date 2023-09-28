@@ -1,1 +1,157 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --mark-color-red: #DA251C;
+  --template-color-red: #E53935;
+  --mark-color-blue: #29166F;
+  --template-color-blue: #1565C0;
+  --mark-color-white: #FFFFFF;
+  --template-color-white: #EEEEEE;
+  --text-light-black: #525051;
+  --text-black: #272727;
+  --text-dark-white: #DDF6FE;
+  --text-white: #FFFFFF;
+  --button-disabled: #BBBBBB;
+  --info-block: #D6D8D9;
+
+  --font-family-title: 'Open Sans', sans-serif;
+  --font-family-text: 'Nunito Sans', sans-serif;
+
+  font-size: 60%;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-item label{
+  font-size: 2rem;
+  font-family: var(--font-family-text);
+  margin-bottom: 1rem;
+}
+
+.form-item .form-control{
+  font-size: 2rem;
+  font-family: var(--font-family-text);
+  padding: 0.5rem;
+  border: none;
+  height: 3rem;
+  border-radius: 4px;
+}
+
+.form-item .form-control.invalid{
+  border: 1px solid var(--template-color-red);
+}
+
+.action-button{
+  font-family: var(--font-family-text);
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  height: 4rem;
+}
+
+.primary-button{
+  color: var(--text-white);
+  background-color: var(--template-color-blue);
+}
+
+.secondary-button{
+  color: var(--text-white);
+  background-color: var(--template-color-red);
+}
+
+button:is(.primary-button, .secondary-button):disabled{
+  background-color: var(--button-disabled);
+}
+
+.menu-tab-items-display{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+  height: 100%;
+  overflow: auto;
+  padding: 1rem 3rem;
+}
+
+.menu-tab-items-display h3{
+  font-family: var(--font-family-title);
+  font-weight: 300;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.menu-tab-items-display button{
+  font-size: 2rem;
+  font-weight: 600;
+  height: 4rem;
+  font-family: var(--font-family-text);
+  color: var(--text-white);
+  border: none;
+  border-radius: 4px;
+}
+
+.menu-tab-items-display button:nth-child(odd){
+  background-color: var(--template-color-blue);
+}
+
+.menu-tab-items-display button:nth-child(even){
+  background-color: var(--template-color-red);
+}
+
+.blocks-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks-section h3{
+  font-family: var(--font-family-title);
+  font-weight: 600;
+  font-size: 2.6rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blocks-section p{
+  font-family: var(--font-family-text);
+  font-size: 2rem;
+}
+
+.blocks-area{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  row-gap: 2rem;
+}
+
+.empty-list-warning{
+  width: 100%;
+  padding: 2rem;
+  border: none;
+  background: none;
+}
+
+.empty-list-warning p{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--font-family-text);
+  color: var(--text-black);
+  text-align: center;
+}
+
