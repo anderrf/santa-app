@@ -4,7 +4,6 @@
   <div class="blocks-area" >
     <p>E-mail: {{professorSchedule?.professorEmail}}</p>
     <div *ngIf="professorSchedule?.schedules?.length; else noSchedules">
-
       <app-week-schedules [schedules]="professorSchedule?.schedules || []"></app-week-schedules>
     </div>
   </div>
