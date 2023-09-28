@@ -10,6 +10,7 @@ export class InfoBlockComponent implements OnInit {
   @Input() public title!: string;
   @Input() public subtitle!: string;
   @Input() public text!: string;
+  @Input() public isEmphasized!: boolean;
 
   constructor() { }
 

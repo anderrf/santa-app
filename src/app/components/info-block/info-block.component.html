@@ -1,4 +1,4 @@
-<div class="info-block">
+<div class="info-block" [ngClass]="{'emphasized': isEmphasized}">
   <h3>{{title}}</h3>
   <label *ngIf="subtitle?.length">{{subtitle}}</label>
   <p>{{text}}</p>

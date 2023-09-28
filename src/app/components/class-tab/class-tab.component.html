@@ -1,6 +1,11 @@
-<div class="menu-tab-items-display">
-  <button>Avisos</button>
-  <button>Anotações</button>
-  <button>Quadro de Horários</button>
-  <button>Professor</button>
+<div class="blocks-section">
+  <h3>Suas Turmas</h3>
+  <div *ngIf="classes?.length; else noClasses" class="menu-tab-items-display">
+    <button *ngFor="let class of classes" [routerLink]="['/turma/'+class.id]">{{class.name}}</button>
+  </div>
+  <ng-template #noClasses>
+    <div class="empty-list-warning">
+      <p>Não há turmas disponíveis para visualizar!</p>
+    </div>
+  </ng-template>
 </div>

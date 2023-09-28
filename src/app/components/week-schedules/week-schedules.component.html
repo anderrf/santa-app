@@ -1,0 +1,20 @@
+<div>
+  <div class="week-day" *ngFor="let day of weekDays; let i = index">
+    <div *ngIf="countByWeekDay(i) > 0">
+      <h4>{{day}}</h4>
+      <app-info-block *ngFor="let schedule of filterByWeekDay(i)"
+        [title]="schedule.className"
+        [subtitle]="schedule.location"
+        [text]="schedule.startHour + ' - ' + schedule.endHour"
+      ></app-info-block>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #noClass>
+  <div class="empty-list-warning">
+    <p>Sem aulas para esse dia!</p>
+  </div>
+</ng-template>
+

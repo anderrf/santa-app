@@ -57,6 +57,7 @@
         "classId": "class01",
         "subject": "Exam 01",
         "senderId": "675849",
+        "sender":"Luiz Mauá",
         "content": "Exam will be held in 2023/09/28",
         "dateTime": "2023-09-10T12:00:00"
       }
@@ -67,6 +68,7 @@
         "classId": "class01",
         "subject": "Exam 01",
         "senderId": "000025",
+        "sender": "Yuri Ferrão",
         "content": "What is the content of this first exam?",
         "dateTime": "2023-09-20T10:00:00"
       },
@@ -75,6 +77,7 @@
         "classId": "class01",
         "subject": "Exam 01",
         "senderId": "000001",
+        "sender": "Anderson Farias",
         "content": "It'll be about the homeworks and tasks",
         "dateTime": "2023-09-20T15:00:00"
       }
@@ -84,6 +87,7 @@
         "id": "27",
         "subject": "Studying references",
         "senderId": "675849",
+        "sender": "Luiz Mauá",
         "content": "Be aware that the class presentations will not be available",
         "dateTime": "2023-09-15T09:00:00"
       }

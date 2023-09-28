@@ -17,6 +17,14 @@ import { BackButtonComponent } from './components/back-button/back-button.compon
 import { CommunityAlertsComponent } from './components/community/community-alerts/community-alerts.component';
 import { CommunityPartnershipsComponent } from './components/community/community-partnerships/community-partnerships.component';
 import { CommunityEventsComponent } from './components/community/community-events/community-events.component';
+import { ClassPageComponent } from './pages/class-page/class-page.component';
+import { ClassAlertsComponent } from './components/class/class-alerts/class-alerts.component';
+import { ClassFunctionsListComponent } from './components/class/class-functions-list/class-functions-list.component';
+import { ClassPublicNotesComponent } from './components/class/class-public-notes/class-public-notes.component';
+import { ClassPrivateNotesComponent } from './components/class/class-private-notes/class-private-notes.component';
+import { ClassSchedulesComponent } from './components/class/class-schedules/class-schedules.component';
+import { WeekSchedulesComponent } from './components/week-schedules/week-schedules.component';
+import { ClassProfessorSchedulesComponent } from './components/class/class-professor-schedules/class-professor-schedules.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +41,15 @@ import { CommunityEventsComponent } from './components/community/community-event
     BackButtonComponent,
     CommunityAlertsComponent,
     CommunityPartnershipsComponent,
-    CommunityEventsComponent
+    CommunityEventsComponent,
+    ClassPageComponent,
+    ClassAlertsComponent,
+    ClassFunctionsListComponent,
+    ClassPublicNotesComponent,
+    ClassPrivateNotesComponent,
+    ClassSchedulesComponent,
+    WeekSchedulesComponent,
+    ClassProfessorSchedulesComponent
   ],
   imports: [
     BrowserModule,

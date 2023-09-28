@@ -12,6 +12,13 @@ import { CommunityPageComponent } from './pages/community-page/community-page.co
 import { CommunityAlertsComponent } from './components/community/community-alerts/community-alerts.component';
 import { CommunityPartnershipsComponent } from './components/community/community-partnerships/community-partnerships.component';
 import { CommunityEventsComponent } from './components/community/community-events/community-events.component';
+import { ClassPageComponent } from './pages/class-page/class-page.component';
+import { ClassFunctionsListComponent } from './components/class/class-functions-list/class-functions-list.component';
+import { ClassAlertsComponent } from './components/class/class-alerts/class-alerts.component';
+import { ClassPublicNotesComponent } from './components/class/class-public-notes/class-public-notes.component';
+import { ClassPrivateNotesComponent } from './components/class/class-private-notes/class-private-notes.component';
+import { ClassSchedulesComponent } from './components/class/class-schedules/class-schedules.component';
+import { ClassProfessorSchedulesComponent } from './components/class/class-professor-schedules/class-professor-schedules.component';
 
 const routes: Routes = [
   {
@@ -68,6 +75,38 @@ const routes: Routes = [
       {
         path: 'eventos',
         component: CommunityEventsComponent
+      }
+    ]
+  },
+  {
+    path: 'turma/:classId',
+    component: ClassPageComponent,
+    pathMatch: 'prefix',
+    children: [
+      {
+        path: '',
+        pathMatch: 'full',
+        component: ClassFunctionsListComponent
+      },
+      {
+        path: 'avisos',
+        component: ClassAlertsComponent
+      },
+      {
+        path: 'chat-turma',
+        component: ClassPrivateNotesComponent
+      },
+      {
+        path: 'chat-professor',
+        component: ClassPublicNotesComponent
+      },
+      {
+        path: 'horarios-turma',
+        component: ClassSchedulesComponent
+      },
+      {
+        path: 'horarios-professor',
+        component: ClassProfessorSchedulesComponent
       }
     ]
   }

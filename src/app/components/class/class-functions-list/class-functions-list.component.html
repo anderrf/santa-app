@@ -1,0 +1,11 @@
+<section class="blocks-section">
+  <app-back-button [routerLink]="['/menu/turma']"></app-back-button>
+  <h3> {{class?.name}}</h3>
+  <div class="menu-tab-items-display">
+    <button [routerLink]="['/turma', class?.id, 'avisos']">Avisos</button>
+    <button [routerLink]="['/turma', class?.id, 'chat-professor']">Chat com professor</button>
+    <button [routerLink]="['/turma', class?.id, 'chat-turma']">Chat dos alunos</button>
+    <button [routerLink]="['/turma', class?.id, 'horarios-turma']">Horários da turma</button>
+    <button [routerLink]="['/turma', class?.id, 'horarios-professor']">Horários do professor</button>
+  </div>
+</section>

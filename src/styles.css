@@ -89,6 +89,13 @@ button:is(.primary-button, .secondary-button):disabled{
   padding: 1rem 3rem;
 }
 
+.menu-tab-items-display h3{
+  font-family: var(--font-family-title);
+  font-weight: 300;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
 .menu-tab-items-display button{
   font-size: 2rem;
   font-weight: 600;
@@ -114,15 +121,23 @@ button:is(.primary-button, .secondary-button):disabled{
 
 .blocks-section h3{
   font-family: var(--font-family-title);
-  font-weight: 300;
+  font-weight: 600;
   font-size: 2.6rem;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blocks-section p{
+  font-family: var(--font-family-text);
+  font-size: 2rem;
 }
 
 .blocks-area{
   display: flex;
   flex-direction: column;
   padding: 1rem 3rem;
+  row-gap: 2rem;
 }
 
 .empty-list-warning{
@@ -139,3 +154,4 @@ button:is(.primary-button, .secondary-button):disabled{
   color: var(--text-black);
   text-align: center;
 }
+

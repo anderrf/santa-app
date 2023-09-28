@@ -1,4 +1,6 @@
+import { ClassDataService } from './../../services/class-data.service';
 import { Component, OnInit } from '@angular/core';
+import { Class } from 'src/app/models/class/class';
 
 @Component({
   selector: 'app-class-tab',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassTabComponent implements OnInit {
 
-  constructor() { }
+  protected classes: Class[] = [];
 
-  public ngOnInit(): void {
+  constructor(private classDataService: ClassDataService) { }
+
+  public async ngOnInit(): Promise<void> {
+    this.classes = await this.classDataService.getAllClasses();
   }
 
 }
