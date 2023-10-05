@@ -4,7 +4,7 @@
   <div class="blocks-area" *ngIf="notes?.length; else noNotes">
     <app-info-block *ngFor="let note of notes"
       [title]="note.subject"
-      [subtitle]="note.sender + ' - ' + (note.dateTime | date : 'dd/MM/yyyy hh:mm:ss')"
+      [subtitle]="(note.senderId === userId ? 'Você' : note.sender) + ' - ' + (note.dateTime | date : 'dd/MM/yyyy hh:mm')"
       [text]="note.content"
       [isEmphasized]="note.senderId === userId"
     ></app-info-block>

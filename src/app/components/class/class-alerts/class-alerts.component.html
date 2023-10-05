@@ -4,7 +4,7 @@
   <div class="blocks-area" *ngIf="alerts?.length; else noAlerts">
     <app-info-block *ngFor="let alert of alerts"
       [title]="alert.subject"
-      [subtitle]="alert.sender + ' - ' + (alert.dateTime | date : 'dd/MM/yyyy hh:mm:ss')"
+      [subtitle]="alert.sender + ' - ' + (alert.dateTime | date : 'dd/MM/yyyy hh:mm')"
       [text]="alert.content"
     ></app-info-block>
   </div>

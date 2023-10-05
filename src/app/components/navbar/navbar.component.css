@@ -3,7 +3,7 @@ nav{
   height: 3.6rem;
   padding: 0.5rem;
   font-size: 2rem;
-  background-color: var(--template-color-red);
+  background-color: var(--template-color-blue);
   color: var(--text-dark-white);
   font-family: var(--font-family-text);
   display: flex;
@@ -11,9 +11,14 @@ nav{
   justify-content: space-between;
 }
 
-.nav-left{
+.left-nav{
   text-align: left;
 }
+
+  .left-nav img {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
 
 .nav-right{
   text-align: right;
